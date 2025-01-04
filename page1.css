@@ -295,8 +295,8 @@ button.active .arrow {
     color: #333;
     display: block;
     font-size: 25px;
-    margin-top: -415px;
-    margin-bottom: 385px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .sfitur1 {
@@ -342,8 +342,9 @@ button.active .arrow {
      color: #333;
      display: block;
      font-size: 25px;
-     margin-top: -380px;
-     margin-bottom: 355px;
+     margin-top: 1px;
+     margin-bottom: 20px;
+     z-index: 20;
 }
 
 .sfitur2 {
@@ -414,7 +415,7 @@ button.active .arrow {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -487,10 +488,10 @@ button.active .arrow {
     position: fixed;
     top: 20px; /* Posisi dari atas */
     left: 40px; /* Posisi dari kiri */
-    padding: 30px 50px;
+    padding: 15px 25px;
     background-color: rgb(86, 255, 5);
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
     border-radius: 10px;
