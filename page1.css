@@ -105,7 +105,7 @@ ul li {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -296,8 +296,7 @@ button.active .arrow {
     display: block;
     font-size: 25px;
     margin-top: -415px;
-    margin-bottom: 18px;
-    position: absolute;
+    margin-bottom: 385px;
 }
 
 .sfitur1 {
@@ -321,8 +320,7 @@ button.active .arrow {
 
 .buyer {
     text-align: center;
-    margin-top: 0px;
-    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .fitur2 {
@@ -345,8 +343,7 @@ button.active .arrow {
      display: block;
      font-size: 25px;
      margin-top: -380px;
-     margin-bottom: 18px;
-     position: absolute;
+     margin-bottom: 355px;
 }
 
 .sfitur2 {
@@ -378,38 +375,95 @@ button.active .arrow {
 }
 
 .clickable-images {
-    width: 150px;
-    margin-left: 0px;
-    margin-bottom: -60px;
+    display: flex; /* Agar gambar dan teks tetap dalam satu elemen */
+    flex-direction: column; /* Susunan elemen gambar dan teks secara vertikal */
+    align-items: center; /* Pusatkan gambar dan teks secara horizontal */
+    text-align: center;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: inherit; /* Ikuti warna teks tema */
+    margin: 0; /* Atur margin agar rapi */
+    margin-top: -5px;
+    padding-top: 10px;
 }
 
-.clickable-imagess {
-    position: absolute;
-    width: 115px;
-    margin-left: 300px;
-    margin-top: -160px;
-    padding-top: -160px;
+.wa {
+    font-size: 14px;
+    padding-top: -20px;
 }
 
-.clickable-imagesss {
-    position: absolute;
-    width: 113px;
-    margin-left: 595px;
-    margin-top: -155px;
-    padding-top: -90px;
+.clickable-image {
+    display: flex; /* Agar gambar dan teks tetap dalam satu elemen */
+    flex-direction: column; /* Susunan elemen gambar dan teks secara vertikal */
+    align-items: center; /* Pusatkan gambar dan teks secara horizontal */
+    text-align: center;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: inherit; /* Ikuti warna teks tema */
+    margin: 0; /* Atur margin agar rapi */
+    margin-top: 15px;
+    padding-bottom: -30px;
+}
+
+.fitur-details {
+    display: flex; /* Aktifkan Flexbox */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Elemen berpindah baris jika ruang tidak cukup */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.clickable-images img {
+    width: 130px; /* Ukuran gambar responsif */
+    height: auto;
+    border-radius: 8px; /* Tambahkan sedikit lekukan */
+    transition: transform 0.3s; /* Efek hover */
+}
+
+.clickable-images img:hover {
+    transform: scale(1.1); /* Zoom-in saat di-hover */
 }
 
 .clickable-image img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: transparent;
-    border-radius: 100px;
+    width: 100px; /* Ukuran gambar responsif */
+    height: auto;
+    border-radius: 8px; /* Tambahkan sedikit lekukan */
+    transition: transform 0.3s; /* Efek hover */
 }
 
-.clickable-image:hover img {
-    transform: scale(1.1);
-    background-color: transparent;
-    border-radius: 100px;
+.clickable-image img:hover {
+    transform: scale(1.1); /* Zoom-in saat di-hover */
 }
+
+.buyer {
+    width: 100%; /* Buat teks menempati seluruh lebar container */
+    margin-bottom: 5px; /* Jarak bawah teks */
+    font-size: 30px; /* Ukuran teks */
+    font-weight: bold; /* Tebal teks */
+    text-align: center; /* Pusatkan teks */
+}
+
+.clickable-image p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .clickable-image img {
+        width: 80px; /* Sesuaikan ukuran gambar */
+    }
+
+    .clickable-image p {
+        font-size: 12px;
+    }
+}
+
 
 .contactwa {
     font-size: 13px;
@@ -431,26 +485,25 @@ button.active .arrow {
  /* Gaya umum tombol */
  #scrollBottomBtn {
     position: fixed;
-    margin-right: 20px;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px 25px;
-    background-color: #007BFF;
+    top: 20px; /* Posisi dari atas */
+    left: 40px; /* Posisi dari kiri */
+    padding: 30px 50px;
+    background-color: rgb(86, 255, 5);
     color: white;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background-color 0.3s;
-    animation: pulse 2s infinite; /* Tambahkan animasi */
-    z-index: 1;
+    animation: pulse 2s infinite; /* Animasi tetap */
+    z-index: 100;
 }
 
 /* Gaya saat hover */
 #scrollBottomBtn:hover {
-    background-color: #0056b3;
+    background-color: rgb(86, 180, 5);
     transform: scale(1.1); /* Perbesar sedikit saat hover */
 }
 
